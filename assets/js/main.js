@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const pokemonList = document.getElementById('pokemonList')
 const loadMore = document.getElementById('loadMore')
 const maxRecords = 231;
@@ -23,29 +22,10 @@ function loadPokemonItems(offset, limit) {
             `).join('')
 
     })
-=======
-
-function convertPokemonToLi(pokemon) {
-    return `
-        <li class="pokemon" ${pokemon.type}>
-            <span class="number">#${pokemon.number}</span>
-            <span class="name">${pokemon.name}</span>
-
-            <div class="detail">
-                <ol class="types">
-                    ${pokemon.types.map((type) => `<li class="type">${type}</li>`).join('')}
-                </ol>
-
-                <img src="${pokemon.photo}" alt="${pokemon.name} image">
-            </div>
-        </li>
-    `
->>>>>>> 9bfa7a20c82320475da09db21aaf3542a101edff
 }
 
 loadPokemonItems(offset, limit)
 
-<<<<<<< HEAD
 loadMore.addEventListener('click', () => {
     offset += limit
     const qtdRecordWithNextPage = offset + limit
@@ -59,10 +39,6 @@ loadMore.addEventListener('click', () => {
         loadPokemonItems(offset, limit)
     }
 })
-=======
-pokeApi.getPokemons().then((pokemons = []) => {
-    pokemonList.innerHTML = pokemons.map(convertPokemonToLi).join('')
->>>>>>> 9bfa7a20c82320475da09db21aaf3542a101edff
 
     /* FUNÇÃO MAP COMPLETA
     const listItems = []
@@ -72,9 +48,4 @@ pokeApi.getPokemons().then((pokemons = []) => {
         }
 
         console.log(listItems)
-<<<<<<< HEAD
     */
-=======
-    */
-    })
->>>>>>> 9bfa7a20c82320475da09db21aaf3542a101edff
