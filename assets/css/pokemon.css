@@ -11,11 +11,11 @@
 }
 
 .grass {
-    background-color: #77c850;
+    background-color: #44be97;
 }
 
 .fire {
-    background-color: #ee7f30;
+    background-color: rgb(228, 119, 40);
 }
 
 .water {
@@ -80,6 +80,7 @@
 
 .pokemon {
     display: flex;
+    box-shadow: 5px 7px 8px 0px rgba(0, 0, 0, 0.4);
     flex-direction: column;
     margin: .5rem;
     padding: 1rem;
